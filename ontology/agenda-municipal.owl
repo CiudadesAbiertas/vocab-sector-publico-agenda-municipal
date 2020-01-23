@@ -8,10 +8,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix esagm: <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#> .
+@prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#> .
 @prefix orges: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
@@ -20,29 +23,29 @@
 
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> rdf:type owl:Ontology ;
                                                                         owl:versionIRI <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal/1.0.0> ;
-                                                                        dc:contributor "Red.es"@es ;
+                                                                        dc:contributor "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                                                       "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
+                                                                                       "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
+                                                                                       "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
+                                                                                       "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es ,
+                                                                                       "Red.es"@es ,
+                                                                                       "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ,
+                                                                                       "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ,
+                                                                                       "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es ;
+                                                                        dc:creator "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ,
+                                                                                   "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"^^xsd:string ;
+                                                                        dc:identifier "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
+                                                                        dc:title "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de la agenda municipal y sus asistentes, convocantes y titulares"@es ,
+                                                                                 "Vocabulary for the representation of data on the events that take place within the municipal agenda and their participants"@en ;
                                                                         terms:creator "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                                         terms:hasFormat "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal.owl"@es ;
-                                                                        esagm:preferredNamespacePrefix "esagm" ;
-                                                                        dc:title "Vocabulary for the representation of data on the events that take place within the municipal agenda and their participants"@en ;
-                                                                        dc:contributor "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ;
-                                                                        terms:license "https://creativecommons.org/licenses/by/4.0"^^xsd:string ;
-                                                                        dc:contributor "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ;
-                                                                        dc:title "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de la agenda municipal y sus asistentes, convocantes y titulares"@es ;
-                                                                        owl:versionInfo "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña." ;
                                                                         terms:issued "2019-03-22"@es ;
-                                                                        dc:creator "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"^^xsd:string ;
-                                                                        dc:contributor "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
-                                                                                       "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
-                                                                                       "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es ;
-                                                                        dc:identifier "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@es ;
+                                                                        terms:license "https://creativecommons.org/licenses/by/4.0"^^xsd:string ;
+                                                                        esagm:preferredNamespacePrefix "esagm" ;
+                                                                        esagm:preferredNamespaceUri "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" ;
                                                                         rdfs:comment """sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
 En esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"""@es ;
-                                                                        dc:contributor "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ;
-                                                                        esagm:preferredNamespaceUri "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" ;
-                                                                        dc:creator "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
-                                                                        dc:contributor "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
-                                                                                       "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es .
+                                                                        owl:versionInfo "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña." .
 
 #################################################################
 #    Annotation properties
@@ -196,6 +199,17 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://schema.org/encodingFormat
+<http://schema.org/encodingFormat> rdf:type owl:ObjectProperty ;
+                                   rdfs:comment """Media type typically expressed using a MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types\">MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>
+
+In cases where a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> has several media type representations, <a class=\"localLink\" href=\"http://schema.org/encoding\">encoding</a> can be used to indicate each <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a> alongside particular <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> information.<br/><br/>
+
+Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry."""@en ;
+                                   rdfs:isDefinedBy schema:encodingFormat ;
+                                   rdfs:label "encodingFormat"@en .
+
+
 ###  http://schema.org/location
 <http://schema.org/location> rdf:type owl:ObjectProperty ;
                              rdfs:domain <http://schema.org/Event> ;
@@ -231,6 +245,15 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
                                rdfs:label "superEvent"@en .
 
 
+###  http://schema.org/url
+<http://schema.org/url> rdf:type owl:ObjectProperty ;
+                        rdfs:domain owl:Thing ,
+                                    [ rdf:type owl:Class ;
+                                      owl:unionOf ( <http://schema.org/Thing>
+                                                  )
+                                    ] .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#ambitoEvento
 esagm:ambitoEvento rdf:type owl:ObjectProperty ;
                    rdfs:domain esagm:Evento ;
@@ -263,7 +286,7 @@ esagm:canal rdf:type owl:ObjectProperty ;
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion
 esagm:documentacion rdf:type owl:ObjectProperty ;
                     rdfs:domain esagm:Evento ;
-                    rdfs:range esagm:Documentacion ;
+                    rdfs:range <http://schema.org/DigitalDocument> ;
                     rdfs:comment "Asociación con la documentación como actas, mociones, vídeos."@es ,
                                  "Association with documentation such as minutes, motions, videos."@en ;
                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
@@ -385,6 +408,19 @@ orges:ambitoCompetencias rdf:type owl:ObjectProperty ;
                                       "Ámbito territorial de ejercicio de competencias de una organización." ;
                          rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
                          rdfs:label "Ámbito de Competencias" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
+escjr:tipoVia rdf:type owl:ObjectProperty ;
+              rdfs:domain escjr:Via ;
+              rdfs:range skos:Concept ;
+              terms:issued "2014-03-28" ;
+              rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
+Por ejemplo, estas serán las URIs correspondientes a calles y plazas
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CALLE
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
+              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+              rdfs:label "tipo de vía"@es .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -509,16 +545,42 @@ skos:inScheme rdf:type owl:ObjectProperty ;
 
 ###  http://schema.org/url
 <http://schema.org/url> rdf:type owl:DatatypeProperty ;
-                        rdfs:domain owl:Thing ;
-                        rdfs:range xsd:anyURI ;
-                        rdfs:comment "url of the item."@en ;
-                        rdfs:isDefinedBy schema:url ;
-                        rdfs:label "url"@en .
+                        rdfs:range xsd:anyURI .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido1
+esagm:apellido1 rdf:type owl:DatatypeProperty ;
+                rdfs:domain esagm:Persona ;
+                rdfs:range xsd:string ;
+                rdfs:comment "First surname of a person."@en ,
+                             "Primer apellido de una persona."@es ;
+                rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@en ;
+                rdfs:label "first surname"@en ,
+                           "primer apellido"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido2
+esagm:apellido2 rdf:type owl:DatatypeProperty ;
+                rdfs:domain esagm:Persona ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Second surname of a person."@en ,
+                             "Segundo apellido de la persona."@es ;
+                rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+                rdfs:label "second surname"@en ,
+                           "segundo apellido"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#finAsistencia
+esagm:finAsistencia rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "End attendance date and time of a participant of an event."@en ,
+                                 "Fecha y hora de fin de asistencia de un integrante de un evento."@es ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"@en ;
+                    rdfs:label "end attendance"@en ,
+                               "fin asistencia"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#formato
 esagm:formato rdf:type owl:DatatypeProperty ;
-              rdfs:domain esagm:Documentacion ;
               rdfs:range [ rdf:type rdfs:Datatype ;
                            owl:oneOf [ rdf:type rdf:List ;
                                        rdf:first "imagen" ;
@@ -538,9 +600,30 @@ esagm:formato rdf:type owl:DatatypeProperty ;
                          "formato"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#inicioAsistencia
+esagm:inicioAsistencia rdf:type owl:DatatypeProperty ;
+                       rdfs:domain esagm:RolIntegranteEvento ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:comment "Fecha y hora de inicio de asistencia de un integrante de un evento."@es ,
+                                    "Start attendance date and time of a participant of an event."@en ;
+                       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+                       rdfs:label "inicio asistencia"@es ,
+                                  "start attendance"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombre
+esagm:nombre rdf:type owl:DatatypeProperty ;
+             rdfs:domain esagm:Persona ;
+             rdfs:range xsd:string ;
+             rdfs:comment "First and second given name of a person."@en ,
+                          "Primer y segundo nombre de la persona."@es ;
+             rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+             rdfs:label "name"@en ,
+                        "nombre"@es .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc
 esagm:nombreDoc rdf:type owl:DatatypeProperty ;
-                rdfs:domain esagm:Documentacion ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Name of the documentation such as minutes of meeting, motion, etc."@en ,
                              "Nombre de la documentación tal como acta de reunión, moción, etc."@es ;
@@ -552,7 +635,6 @@ esagm:nombreDoc rdf:type owl:DatatypeProperty ;
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico
 esagm:publico rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
-              rdfs:domain esagm:Documentacion ;
               rdfs:range xsd:boolean ;
               rdfs:comment "Si la documentación es de acceso público o no (privado)."@es ,
                            "Whether the documentation is public access or not (private)."@en ;
@@ -575,13 +657,133 @@ esagm:reunionLobby rdf:type owl:DatatypeProperty ;
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc
 esagm:uriDoc rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
-             rdfs:domain esagm:Documentacion ;
              rdfs:range xsd:anyURI ;
              rdfs:comment "URI donde se encuentra la documentación."@es ,
                           "URI where the documentation is located."@en ;
              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
              rdfs:label "uri documentación"@es ,
                         "uri documentation"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada
+esdir:entrada rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf locn:locatorDesignator ;
+              terms:issued "2020-01-16" ;
+              rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+              rdfs:label "entrada"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera
+esdir:escalera rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf locn:locatorDesignator ;
+               terms:issued "2020-01-16" ;
+               rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+               rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+               rdfs:label "escalera"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro
+esdir:hectometro rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf locn:locatorDesignator ;
+                 terms:issued "2020-01-23" ;
+                 rdfs:comment "Esta propiedad permite definir el hectómetro en el que se encuentra una dirección postal en caso de que sea relevante representarlo, siendo complementaria a la propiedad que permite representar el punto kilométrico. Es importante destacar que esta propiedad no aparece en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86, como el resto de propiedades definidas en este vocabulario como subpropiedades de locn:locatorDesignator y locn:locatorName"@es ;
+                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+                 rdfs:label "hectómetro"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio
+esdir:nombreDelEdificio rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf locn:locatorName ;
+                        terms:issued "2020-01-16" ;
+                        rdfs:comment "Un locator name específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+                        rdfs:label "nombre del edificio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta
+esdir:planta rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf locn:locatorDesignator ;
+             terms:issued "2020-01-16" ;
+             rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+             rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+             rdfs:label "planta"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta
+esdir:puerta rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf locn:locatorDesignator ;
+             terms:issued "2020-01-16" ;
+             rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+             rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+             rdfs:label "puerta"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico
+esdir:puntoKilometrico rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf locn:locatorDesignator ;
+                       terms:issued "2020-01-16" ;
+                       rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+                       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> ;
+                       rdfs:label "punto kilométrico"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal
+escjr:extensionDePortal rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf locn:locatorDesignator ;
+                        terms:issued "2020-01-23" ;
+                        rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+                        rdfs:label "extensión de portal"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia
+escjr:numeroDePolicia rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf locn:locatorDesignator ;
+                      terms:issued "2020-01-23" ;
+                      rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+                      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+                      rdfs:label "número de policía"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal
+escjr:numeroDePortal rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf locn:locatorDesignator ;
+                     terms:issued "2020-01-23" ;
+                     rdfs:comment "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es ;
+                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+                     rdfs:label "número de portal"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula
+escjr:particula rdf:type owl:DatatypeProperty ;
+                rdfs:domain escjr:Via ;
+                rdfs:range xsd:string ;
+                terms:issued "2020-01-16" ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ,
+                                 "Partícula de la denominación de la vía, en caso de que exista y se desee representar. Por ejemplo, se suelen utilizar como partículas elementos como de, de la, del, etc."@es ;
+                rdfs:label "partícula"@es .
+
+
+###  http://www.geonames.org/ontology#officialName
+<http://www.geonames.org/ontology#officialName> rdf:type owl:DatatypeProperty ;
+                                                rdfs:comment "Un nombre en el idioma oficial local"@es ;
+                                                rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
+                                                rdfs:label "nombre oficial"@es .
+
+
+###  http://www.w3.org/ns/locn#fullAddress
+locn:fullAddress rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "The complete address written as a string, with or without formatting"@en ;
+                 rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
+
+
+###  http://www.w3.org/ns/locn#locatorDesignator
+locn:locatorDesignator rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/ns/locn#locatorName
+locn:locatorName rdf:type owl:DatatypeProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/name
@@ -618,6 +820,17 @@ dbo:Municipality rdf:type owl:Class ;
                             "municipio"@es .
 
 
+###  http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> rdf:type owl:Class .
+
+
+###  http://schema.org/DigitalDocument
+<http://schema.org/DigitalDocument> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://schema.org/CreativeWork> ;
+                                    rdfs:comment "An electronic file or document."@en ;
+                                    rdfs:label "DigitalDocument"@en .
+
+
 ###  http://schema.org/Event
 <http://schema.org/Event> rdf:type owl:Class ;
                           rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the offers property. Repeated events may be structured as separate Event objects." ;
@@ -632,6 +845,13 @@ dbo:Municipality rdf:type owl:Class ;
                           rdfs:label "Place" .
 
 
+###  http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> rdf:type owl:Class ;
+                                  rdfs:comment "The mailing address."@en ;
+                                  rdfs:isDefinedBy schema:PostalAddress ;
+                                  rdfs:label "PostalAddress"@en .
+
+
 ###  http://schema.org/Text
 <http://schema.org/Text> rdf:type owl:Class ;
                          rdfs:comment "Data type: Text."@en ;
@@ -643,15 +863,6 @@ dbo:Municipality rdf:type owl:Class ;
                           rdfs:comment "The most generic type of item."@en ;
                           rdfs:isDefinedBy schema:Thing ;
                           rdfs:label "Thing"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion
-esagm:Documentacion rdf:type owl:Class ;
-                    rdfs:comment "Reference to the documentation associated with the event."@en ,
-                                 "Referencia a la documentación asociada al evento."@es ;
-                    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
-                    rdfs:label "Documentación"@es ,
-                               "Documentation"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento
@@ -706,10 +917,6 @@ esagm:Evento rdf:type owl:Class ;
                                rdf:type owl:Class
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty esagm:documentacion ;
-                               owl:allValuesFrom esagm:Documentacion
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty esagm:tipoEvento ;
                                owl:allValuesFrom skos:Concept
                              ] ;
@@ -718,6 +925,16 @@ esagm:Evento rdf:type owl:Class ;
              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> ;
              rdfs:label "Event in agenda"@en ,
                         "Evento en agenda"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona
+esagm:Persona rdf:type owl:Class ;
+              rdfs:subClassOf foaf:Person ;
+              rdfs:comment "Person that participates in an event."@en ,
+                           "Persona que asiste a un evento."@es ;
+              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal" ;
+              rdfs:label "Person"@en ,
+                         "Persona"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento
@@ -765,6 +982,17 @@ esagm:RolIntegranteEvento rdf:type owl:Class ;
                                      "Role member of event"@en .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal
+esdir:DireccionPostal rdf:type owl:Class ;
+                      rdfs:subClassOf <http://schema.org/PostalAddress> ,
+                                      locn:Address ;
+                      terms:issued "2014-03-28" ;
+                      rdfs:comment """Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address
+Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita."""@es ;
+                      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> ;
+                      rdfs:label "Dirección postal"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
 esadm:Distrito rdf:type owl:Class ;
                rdfs:subClassOf dbo:District ;
@@ -787,6 +1015,28 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                 rdfs:seeAlso <http://purl.org/derecho/vocabulario#Municipio> .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal
+escjr:Portal rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.geonames.org/ontology#Feature> ;
+             owl:disjointWith escjr:Via ;
+             terms:issued "2013-03-28" ;
+             rdfs:comment "Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]"@es ;
+             rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+             rdfs:label "Portal"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
+escjr:Via rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.geonames.org/ontology#Feature> ;
+          terms:issued "2013-03-28" ;
+          rdfs:comment """Vía de comunicación construida para la circulación. 
+En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
+
+Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo."""@es ;
+          rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+          rdfs:label "Vía"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento
 esequip:Equipamiento rdf:type owl:Class ;
                      rdfs:subClassOf <http://schema.org/Place> ;
@@ -795,6 +1045,11 @@ esequip:Equipamiento rdf:type owl:Class ;
                      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructura/equipamiento-municipal> ;
                      rdfs:label "equipamiento"@es ,
                                 "equipment"@en .
+
+
+###  http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://schema.org/Place> .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -816,6 +1071,12 @@ skos:ConceptScheme rdf:type owl:Class ;
                    <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
 
 
+###  http://www.w3.org/ns/locn#Address
+locn:Address rdf:type owl:Class ;
+             rdfs:comment "An \"address representation\" as defined in the INSPIRE Data Specification on Addresses, v3.0.1. The locn:addressId property may be used to link this locn:Address to other representations."@en ;
+             rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
+
+
 ###  http://www.w3.org/ns/org#Membership
 <http://www.w3.org/ns/org#Membership> rdf:type owl:Class ;
                                       owl:disjointWith <http://www.w3.org/ns/org#Organization> ,
@@ -831,7 +1092,6 @@ skos:ConceptScheme rdf:type owl:Class ;
 <http://www.w3.org/ns/org#Organization> rdf:type owl:Class ;
                                         rdfs:subClassOf foaf:Agent ;
                                         owl:disjointWith <http://www.w3.org/ns/org#Role> ,
-                                                         foaf:Group ,
                                                          foaf:Person ;
                                         rdfs:comment "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas."@es ,
                                                      "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."@en ;
@@ -854,15 +1114,6 @@ skos:ConceptScheme rdf:type owl:Class ;
 foaf:Agent rdf:type owl:Class ;
            rdfs:comment "An agent (eg. person, group, software or physical artifact)."@en ;
            rdfs:label "Agent"@en .
-
-
-###  http://xmlns.com/foaf/0.1/Group
-foaf:Group rdf:type owl:Class ;
-           rdfs:subClassOf foaf:Agent ;
-           owl:disjointWith foaf:Person ;
-           rdfs:comment "A class of Agents."@en ;
-           rdfs:isDefinedBy foaf: ;
-           rdfs:label "Group"@en .
 
 
 ###  http://xmlns.com/foaf/0.1/Person
@@ -902,4 +1153,22 @@ foaf:Person rdf:type owl:Class ;
                                                                                                     skos:ConceptScheme .
 
 
-###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
+###  http://www.geonames.org/ontology#R
+<http://www.geonames.org/ontology#R> rdf:type owl:NamedIndividual .
+
+
+###  http://www.geonames.org/ontology#R.ST
+<http://www.geonames.org/ontology#R.ST> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://schema.org/url> rdfs:isDefinedBy schema:url ;
+                        rdfs:label "url"@en ;
+                        rdfs:comment "url of the item."@en ,
+                                     "URL of the item."@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
