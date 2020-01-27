@@ -22,7 +22,7 @@
 @base <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> .
 
 <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal> rdf:type owl:Ontology ;
-                                                                        owl:versionIRI <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal/1.0.0> ;
+                                                                        owl:versionIRI <http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal/1.0.1> ;
                                                                         dc:contributor "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                        "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                        "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
@@ -45,7 +45,7 @@
                                                                         esagm:preferredNamespaceUri "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#" ;
                                                                         rdfs:comment """sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
 En esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"""@es ;
-                                                                        owl:versionInfo "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña." .
+                                                                        owl:versionInfo "Esta es la versión revisada de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña. En esta revisión se ha incluido el reuso de schema:DigitalDocument, la normalización de las direcciones, las propiedades fecha-hora de inicio de asistencia y final de asistencia a un evento, y nombre, primer apellido y segundo apellido." .
 
 #################################################################
 #    Annotation properties
