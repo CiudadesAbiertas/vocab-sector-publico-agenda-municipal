@@ -4,7 +4,9 @@
 <center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Vocabulario para la representación de los datos sobre los eventos de la agenda municipal y sus participantes</figcaption>
 </center>
 <span class="markdown">
-El concepto principal de este vocabulario es el de [esagm:Evento](#Evento)  para el cual se reutilizan las clases [schema:Event](http://schema.org/Event) y [schema:Place](http://schema.org/Place) del vocabulario schema.org. Un lugar (Place) puede ser un [esequip:Equipamiento](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/index-en.html) municipal tal como el edificio del ayuntamiento, un centro cultural, etc. Un evento puede tener [esagm:Documentacion](#Documentacion) asociada tales como la Orden del Día o el Acta de la Reunión. Un integrante de un evento puede tener el [esagm:rol](#rol) de convocante, titular o asistente. Los eventos están integrados por varios [foaf:Agent](http://xmlns.com/foaf/0.1/Agent); cabe mencionar que el conjunto de agentes comprende personas, organizaciones tales como instituciones o empresas y grupos tales como los colectivos. Los cargos de las personas integrantes de un evento y sus unidades administrativas se representan a través de las clases [org:Role](https://www.w3.org/TR/vocab-org/#org:Role) , [org:Organization](https://www.w3.org/TR/vocab-org/#class-organization) y [org:Membership](https://www.w3.org/TR/vocab-org/#class-membership). Una organización tiene un ámbito de competencias en una región administrativa gubernamental representada mediante la clase [dbo:GovernmentalAministrativeRegion](http://dbpedia.org/ontology/GovernmentalAdministrativeRegion) como puede ser un [esadm:Distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito) o [esadm:Municipio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio).
+  El concepto principal de este vocabulario es el de [esagm:Evento](#Evento)  para el cual se reutilizan las clases [schema:Event](http://schema.org/Event) y [schema:Place](http://schema.org/Place) del vocabulario schema.org. Un lugar (Place) puede ser un [esequip:Equipamiento](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/index-en.html) municipal tal como el edificio del ayuntamiento, un centro cultural, etc. Un lugar tiene una dirección que puede estar normalizada utilizando las propiedades de la clase  [esdir:DireccionPostal](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal) y las propiedades de las clases [escjr:Via](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via) y [escjr:Portal](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal)  . También se puede representar la dirección completa sin normalizar mediante la propiedad [locn:fullAddress](http://www.w3.org/ns/locn#fullAddress).
+
+  Un evento puede tener uno o varios documentos [schema:DigitalDocument](http://schema.org/DigitalDocument) asociados tales como la Orden del Día o el Acta de la Reunión. Un integrante de un evento puede tener el [esagm:rol](#rol) de convocante, titular o asistente. Los eventos están integrados por varios agentes [foaf:Agent](http://xmlns.com/foaf/0.1/Agent); cabe mencionar que el conjunto de agentes comprende personas, organizaciones tales como instituciones o empresas y grupos tales como los colectivos. Los cargos de las personas integrantes de un evento y sus unidades administrativas se representan a través de las clases [org:Role](https://www.w3.org/TR/vocab-org/#org:Role) , [org:Organization](https://www.w3.org/TR/vocab-org/#class-organization) y [org:Membership](https://www.w3.org/TR/vocab-org/#class-membership). Una organización tiene un ámbito de competencias en una región administrativa gubernamental representada mediante la clase [dbo:GovernmentalAministrativeRegion](http://dbpedia.org/ontology/GovernmentalAdministrativeRegion) como puede ser un [esadm:Distrito](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito) o [esadm:Municipio](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio).
 
 Adicionalmente, en este vocabulario se han utilizado varios esquemas de conceptos SKOS para representar el tipo de acceso, tipo de sesión, tipo de evento o canal de un Evento. En la Figura 1 se pueden observar varias relaciones con la clase de conceptos SKOS, sin embargo, los valores concretos no se han especificado pues son diferentes según la taxonomía que representen. Por ejemplo, la propiedad [esagm:tipoSesion](#tipoSesion) representa si la sesión es Ordinaria, Extraordinaria o Extraordinaria Urgente.
 </span>
@@ -12,20 +14,28 @@ Adicionalmente, en este vocabulario se han utilizado varios esquemas de concepto
 <span class="markdown">
   Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
 
-  En primer lugar para la representación de un evento se crea una instancia de la clase [esagm:Evento](#Evento) con las propiedades [schema:name](http://schema.org/name) (título del evento), [schema:startDate](https://schema.org/startDate) (fecha de inicio) y el [esagm:tipoEvento](#tipoEvento) según la taxonomía de tipo de evento, el caso del ejemplo es una reunión interna. Se ha generado un identificador único del evento a partir de la combinación de su título y su fecha y hora de inicio. 
-  El evento se asocia a través de la propiedad [schema:location](https://schema.org/location) con una instancia de [schema:Place](https://schema.org/Place) que corresponde al lugar donde se realiza el evento y que tiene un [schema:address](https://schema.org/address) (dirección). El evento tiene como [esagm:ambitoEvento](#ambitoEvento) al ayuntamiento del municipio Madrid que ha sido definido por el Instituto Geográfico Nacional (IGN) como el recurso de tipo municipio con código 28079. Además se define una instancia de la clase [esagm:RolIntegranteEvento](#RolIntegranteEvento) que permite relacionar el evento con cada titular o asistente, en este caso se proporciona información acerca del titular del evento al cual se le ha generado un identificador único a partir de sus nombres y apellidos. 
+  En primer lugar para la representación de un evento se crea una instancia de la clase [esagm:Evento](#Evento) con las propiedades [schema:name](http://schema.org/name) (título del evento), [schema:startDate](https://schema.org/startDate) (fecha de inicio) y el [esagm:tipoEvento](#tipoEvento) según la taxonomía de tipo de evento, el caso del ejemplo es una reunión interna. Se ha generado un identificador único del evento a partir de la combinación de su título y su fecha y hora de inicio.
+  El evento se asocia a través de la propiedad [schema:location](https://schema.org/location) con una instancia de [schema:Place](https://schema.org/Place) que corresponde al lugar donde se realiza el evento y que tiene un nombre [schema:name](https://schema.org/name) y una dirección [schema:address](https://schema.org/address)  que a su vez  es una [esdir:DireccionPostal](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal). La dirección postal contiene tanto la dirección normalizada como la dirección completa [locn:fullAddress](http://www.w3.org/ns/locn#fullAddress). El evento tiene como [esagm:ambitoEvento](#ambitoEvento) al ayuntamiento del municipio Madrid que ha sido definido por el Instituto Geográfico Nacional (IGN) como el recurso de tipo municipio con código 28079. Además se define una instancia de la clase [esagm:RolIntegranteEvento](#RolIntegranteEvento) que permite relacionar el evento con cada titular o asistente, en este caso se proporciona información acerca del titular del evento al cual se le ha generado un identificador único a partir de sus nombres y apellidos.
 </span>
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/evento/6c0a90085d77717ea2232760a2de2d36&gt; a esagm:Evento ;
 	schema:name "REUNIÓN CON AUXILIARES DE INFORMACIÓN, ATENCIÓN AL PÚBLICO Y CONTROL DE ENTRADAS EN EQUIPAMIENTOS ADSCRITOS AL DISTRITO DE VILLAVERDE."@es ;
 	schema:startDate "2018-04-12T17:30:00"^^xsd:dateTime ;
-	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/reunion-interna&gt; .
+	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/reunion-interna&gt; ;
+  schema:location &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/lugar/268b8ba317bf9b2b980e3bc6eba0670f&gt; ;
+  esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/lugar/268b8ba317bf9b2b980e3bc6eba0670f&gt; a schema:Place ;
-	schema:address "JUNTA MUNICIPAL DE VILLAVERDE. C/ ARROYO BUENO, 53"@es .
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/evento/6c0a90085d77717ea2232760a2de2d36> schema:location 
-    &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/lugar/268b8ba317bf9b2b980e3bc6eba0670f&gt; ;
-	esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/rol-integrante-evento/678876b4254510997b45b568baba7cc9&gt; a esagm:rolIntegranteEvento ;
+  schema:name "JUNTA MUNICIPAL DE VILLAVERDE" ;
+  schema:address &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/direccion/268b8ba317bf9b2b980e3bc6eba0670f&gt; .
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/direccion/268b8ba317bf9b2b980e3bc6eba0670f&gt; a esdir:DireccionPostal ;
+	locn:fullAddress "C/ ARROYO BUENO, 53"@es ;
+  escjr:via &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/via/378x8cd317bf0b2b980e3bc6eba0670f&gt; ;
+  escjr:portal &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/portal/890x8cd317bf0b2b980e3bc6eba0670f&gt; .
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/via/378x8cd317bf0b2b980e3bc6eba0670f&gt; a escjr:Via ;
+  escjr:officialName "Arroyo Bueno"@es .
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/portal/890x8cd317bf0b2b980e3bc6eba0670f&gt; a escjr:Portal ;
+  esccjr:numeroDePortal "53" .
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/rol-integrante-evento/678876b4254510997b45b568baba7cc9&gt; a esagm:RolIntegranteEvento ;
 	esagm:evento &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/evento/6c0a90085d77717ea2232760a2de2d36&gt; ;
 	esagm:rol &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante/titular&gt; ;
 	esagm:integra &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; .
@@ -41,29 +51,27 @@ Adicionalmente, en este vocabulario se han utilizado varios esquemas de concepto
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/persona/73bec760fc4bd4f37ce7a178d32f4f5f&gt; a foaf:Agent ;
 	foaf:name "Ignacio De Benito Pérez"@es .
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/cargo/071c7f7d048450454001cabe345642fd&gt; a org:Role ;
-	rdfs:label "Concejala"@es 
+	rdfs:label "Concejal/a"@es
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/organizacion/47537a424972964d9a1c8b0bc694053d&gt; a org:Organization ;
 	foaf:name "GRUPO MUNICIPAL SOCIALISTA DE MADRID"@es ;
 	orges:ambitoCompetencias &lt;https://datos.ign.es/recurso/btn100/municipio/28079&gt; .
 </pre>
 
 <span class="markdown">
-  En el siguiente ejemplo se tiene una Junta de Distrito ordinaria realizada en el municipio de Zaragoza. Para este evento se ha creado una instancia de la clase [esagm:Documentacion](#Documentacion) con un [esagm:nombreDoc](#nombreDoc) (Orden del Día) y un [esagm:uriDoc](#uriDoc), en este caso la documentación es [esagm:publico](#publico).
+  En el siguiente ejemplo se tiene una Junta de Distrito ordinaria realizada en el municipio de Zaragoza. Para este evento se ha creado una instancia de la clase [schema:DigitalDocument](#Documentacion) con un [schema:name](http://schema.org/name) (Orden del Día), un url [schema:url](http://schema.org/url) y formato [schema:encodingFormat](http://schema.org/encodingFormat) pdf.
 </span>
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/evento/89db636175d51282bbe88580c14da00b&gt; a esagm:Evento ;
 	schema:name "Sesión ordinaria del Pleno de la Junta Vecinal Monzalbarba"@es ;
 	schema:startDate "2019-04-16T19:00:00"^^xsd:dateTime ;
 	esagm:tipoEvento &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento/junta-de-distrito&gt; ;
-	schema:location &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/lugar/294bdb9aecbe2d20ab7f825252e0ca52&gt; .
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/documentacion/fd578b33f3cef7fa38a0415c6db60c81&gt; a esagm:Documentacion ;
-	esagm:nombreDoc "Orden del día"@es ;
-	esagm:uriDoc &lt;http://www.zaragoza.es/pubFehacientev2/servlet/PubFehacienteServlet?ID=73762&gt; ;
-	esagm:publico "true"^^xsd:boolean .
-&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/evento/89db636175d51282bbe88580c14da00b&gt; 
-    esagm:documentacion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/documentacion/fd578b33f3cef7fa38a0415c6db60c81&gt;
-	esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/50297&gt;
-	esagm:tipoSesion &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion/ordinaria&gt; .
+	schema:location &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/lugar/294bdb9aecbe2d20ab7f825252e0ca52&gt; ;
+  esagm:documentacion &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/documentacion/fd578b33f3cef7fa38a0415c6db60c81&gt;
+  esagm:ambitoEvento &lt;https://datos.ign.es/recurso/btn100/municipio/50297&gt;
+esagm:tipoSesion &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion/ordinaria&gt; .
+&lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/agenda-municipal/documentacion/fd578b33f3cef7fa38a0415c6db60c81&gt; a schema:DigitalDocument ;
+	schema:name "Orden del día"@es ;
+	schema:url &lt;http://www.zaragoza.es/pubFehacientev2/servlet/PubFehacienteServlet?ID=73762&gt; ;
+	schema:encodingFormat "pdf" .
 </pre>
 </html>
-
