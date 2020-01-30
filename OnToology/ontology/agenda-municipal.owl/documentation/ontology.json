@@ -1,15 +1,23 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid3"
+      "@id" : "http://schema.org/Thing"
     } ]
   } ]
 }, {
   "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-acceso"
@@ -18,17 +26,17 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid15"
+      "@id" : "_:genid17"
     } ]
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-evento"
@@ -37,17 +45,17 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid19"
+      "@id" : "_:genid21"
     } ]
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion"
@@ -56,7 +64,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -68,17 +76,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid29"
+      "@id" : "_:genid31"
     }, {
-      "@id" : "_:genid27"
+      "@id" : "_:genid29"
     } ]
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -91,7 +99,17 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -100,26 +118,17 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal"
   } ]
 }, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid34"
+      "@id" : "_:genid36"
     }, {
-      "@id" : "_:genid32"
+      "@id" : "_:genid34"
     } ]
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
@@ -132,7 +141,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
@@ -141,31 +150,31 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid39"
+      "@id" : "_:genid41"
     }, {
-      "@id" : "_:genid37"
+      "@id" : "_:genid39"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso"
   } ]
 }, {
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
@@ -173,17 +182,17 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso"
   } ]
 }, {
-  "@id" : "_:genid40",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid44"
+      "@id" : "_:genid46"
     }, {
-      "@id" : "_:genid42"
+      "@id" : "_:genid44"
     } ]
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -194,24 +203,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion"
-  } ]
-}, {
-  "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion"
   } ]
 }, {
   "@id" : "_:genid46",
@@ -220,43 +211,51 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoEvento"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion"
   } ]
 }, {
   "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoEvento"
+  } ]
+}, {
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid51"
+      "@id" : "_:genid52"
     }, {
-      "@id" : "_:genid49"
+      "@id" : "_:genid50"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid7"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento"
@@ -265,17 +264,17 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid56"
+      "@id" : "_:genid57"
     }, {
-      "@id" : "_:genid54"
+      "@id" : "_:genid55"
     } ]
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -288,7 +287,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -297,17 +296,17 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra"
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid61"
+      "@id" : "_:genid62"
     }, {
-      "@id" : "_:genid59"
+      "@id" : "_:genid60"
     } ]
   } ]
 }, {
-  "@id" : "_:genid59",
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -320,7 +319,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -330,22 +329,22 @@
   } ]
 }, {
   "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid9"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/rol-integrante"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid11"
-    } ]
   } ]
 }, {
   "@id" : "http://dbpedia.org/ontology/District",
@@ -407,9 +406,6 @@
   "@id" : "http://purl.org/dc/elements/1.1/relation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/rights",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -420,10 +416,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/accessRights",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/elements/1.1/rights"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/alternative",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
@@ -505,10 +498,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/elements/1.1/rights"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -517,10 +507,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/rights",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/elements/1.1/rights"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/tableOfContents",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
@@ -532,6 +519,23 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/dc/elements/1.1/title"
+  } ]
+}, {
+  "@id" : "http://schema.org/CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/DigitalDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An electronic file or document."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DigitalDocument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/CreativeWork"
   } ]
 }, {
   "@id" : "http://schema.org/Event",
@@ -557,6 +561,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/PostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The mailing address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PostalAddress"
   } ]
 }, {
   "@id" : "http://schema.org/Text",
@@ -622,6 +640,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/encodingFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Media type typically expressed using a MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types\">MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>\n\nIn cases where a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> has several media type representations, <a class=\"localLink\" href=\"http://schema.org/encoding\">encoding</a> can be used to indicate each <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a> alongside particular <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> information.<br/><br/>\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/encodingFormat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "encodingFormat"
   } ]
 }, {
   "@id" : "http://schema.org/endDate",
@@ -738,13 +770,18 @@
   } ]
 }, {
   "@id" : "http://schema.org/url",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URL of the item."
+  }, {
     "@language" : "en",
     "@value" : "url of the item."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://schema.org/url"
@@ -796,9 +833,6 @@
     "@language" : "es",
     "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
   } ],
-  "http://purl.org/dc/elements/1.1/rights" : [ {
-    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
-  } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "es",
     "@value" : "Vocabulario para la representación de datos sobre los eventos que se realizan dentro de la agenda municipal y sus asistentes, convocantes y titulares"
@@ -828,33 +862,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "sta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \nEn esta versión se han clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reuni'on del 22/03/2019"
+    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \nEn esta versión se tienen clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en la reunión del 22/03/2019 y de acuerdo a los issues abiertos por los ayuntamientos en el repositorio Github."
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal/1.0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "Esta es la versión inicial de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña."
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Reference to the documentation associated with the event."
-  }, {
-    "@language" : "es",
-    "@value" : "Referencia a la documentación asociada al evento."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Documentación"
-  }, {
-    "@language" : "en",
-    "@value" : "Documentation"
+    "@value" : "Esta es la versión revisada de la ontología de Agenda Municipal que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña. En esta revisión se ha incluido el reuso de schema:DigitalDocument, la normalización de las direcciones, las propiedades fecha-hora de inicio de asistencia y final de asistencia a un evento, y nombre, primer apellido y segundo apellido."
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento",
@@ -879,17 +893,38 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Event"
   }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid27"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid32"
   }, {
-    "@id" : "_:genid35"
+    "@id" : "_:genid37"
   }, {
-    "@id" : "_:genid40"
+    "@id" : "_:genid42"
   }, {
-    "@id" : "_:genid45"
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Person that participates in an event."
   }, {
-    "@id" : "_:genid46"
+    "@language" : "es",
+    "@value" : "Persona que asiste a un evento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  }, {
+    "@language" : "es",
+    "@value" : "Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento",
@@ -912,11 +947,11 @@
     "@value" : "Role member of event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid48"
   }, {
-    "@id" : "_:genid52"
+    "@id" : "_:genid53"
   }, {
-    "@id" : "_:genid57"
+    "@id" : "_:genid58"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#ambitoEvento",
@@ -945,6 +980,59 @@
     "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First surname of a person."
+  }, {
+    "@language" : "es",
+    "@value" : "Primer apellido de una persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "first surname"
+  }, {
+    "@language" : "es",
+    "@value" : "primer apellido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Second surname of a person."
+  }, {
+    "@language" : "es",
+    "@value" : "Segundo apellido de la persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "second surname"
+  }, {
+    "@language" : "en",
+    "@value" : "segundo apellido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -968,7 +1056,7 @@
     "@value" : "channel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion",
@@ -994,7 +1082,7 @@
     "@value" : "associated with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
+    "@id" : "http://schema.org/DigitalDocument"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#evento",
@@ -1026,6 +1114,27 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#finAsistencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "End attendance date and time of a participant of an event."
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha y hora de fin de asistencia de un integrante de un evento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "end attendance"
+  }, {
+    "@language" : "es",
+    "@value" : "fin asistencia"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#formato",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1034,9 +1143,6 @@
   }, {
     "@language" : "es",
     "@value" : "Formato del documento: imagen, video, texto."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
@@ -1049,7 +1155,33 @@
     "@value" : "formato"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid21"
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#inicioAsistencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fecha y hora de inicio de asistencia de un integrante de un evento."
+  }, {
+    "@language" : "en",
+    "@value" : "Start attendance date and time of a participant of an event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "inicio asistencia"
+  }, {
+    "@language" : "en",
+    "@value" : "start attendance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra",
@@ -1078,6 +1210,32 @@
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First and second given name of a person."
+  }, {
+    "@language" : "es",
+    "@value" : "Primer y segundo nombre de la persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  }, {
+    "@language" : "es",
+    "@value" : "nombre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1086,9 +1244,6 @@
   }, {
     "@language" : "es",
     "@value" : "Nombre de la documentación tal como acta de reunión, moción, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
@@ -1118,9 +1273,6 @@
   }, {
     "@language" : "en",
     "@value" : "Whether the documentation is public access or not (private)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
@@ -1186,7 +1338,7 @@
     "@value" : "role in event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante",
@@ -1238,7 +1390,7 @@
     "@value" : "tipo de acceso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoEvento",
@@ -1263,7 +1415,7 @@
     "@value" : "tipo de evento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion",
@@ -1289,7 +1441,7 @@
     "@value" : "tipo de sesión"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid17"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc",
@@ -1300,9 +1452,6 @@
   }, {
     "@language" : "en",
     "@value" : "URI where the documentation is located."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal"
@@ -1316,6 +1465,168 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address\nAdemás de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dirección postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  }, {
+    "@id" : "http://www.w3.org/ns/locn#Address"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "entrada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "escalera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad permite definir el hectómetro en el que se encuentra una dirección postal en caso de que sea relevante representarlo, siendo complementaria a la propiedad que permite representar el punto kilométrico. Es importante destacar que esta propiedad no aparece en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86, como el resto de propiedades definidas en este vocabulario como subpropiedades de locn:locatorDesignator y locn:locatorName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "hectómetro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator name específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "nombre del edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorName"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "planta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "puerta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "punto kilométrico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias",
@@ -1387,6 +1698,154 @@
     "@id" : "http://dbpedia.org/ontology/Municipality"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2013-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Portal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.geonames.org/ontology#Feature"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2013-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Vía de comunicación construida para la circulación. \nEn su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.\n\nPor esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Vía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.geonames.org/ontology#Feature"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "extensión de portal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "número de policía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "número de portal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-01-16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  }, {
+    "@language" : "es",
+    "@value" : "Partícula de la denominación de la vía, en caso de que exista y se desee representar. Por ejemplo, se suelen utilizar como partículas elementos como de, de la, del, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "partícula"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via\nPor ejemplo, estas serán las URIs correspondientes a calles y plazas\nhttp://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CALLE\nhttp://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de vía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1424,6 +1883,32 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/tipo-sesion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+}, {
+  "@id" : "http://www.geonames.org/ontology#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://www.geonames.org/ontology#R",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.geonames.org/ontology#R.ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.geonames.org/ontology#officialName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Un nombre en el idioma oficial local"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.geonames.org/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "nombre oficial"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1509,6 +1994,32 @@
   "@id" : "http://www.w3.org/2008/05/skos#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/ns/locn#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An \"address representation\" as defined in the INSPIRE Data Specification on Addresses, v3.0.1. The locn:addressId property may be used to link this locn:Address to other representations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/locn"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#fullAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The complete address written as a string, with or without formatting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/locn"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#locatorDesignator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#locatorName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/org#Membership",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1558,8 +2069,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.w3.org/ns/org#Role"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/Group"
   }, {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
@@ -1763,26 +2272,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Agent"
-  } ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Group",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A class of Agents."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",

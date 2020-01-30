@@ -3,6 +3,9 @@
     "abstract" : {
       "@id" : "http://purl.org/dc/terms/abstract"
     },
+    "Address" : {
+      "@id" : "http://www.w3.org/ns/locn#Address"
+    },
     "scopeNote" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
     },
@@ -23,9 +26,16 @@
     "example" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
+    "apellido2" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "rolIntegrante" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rolIntegrante",
       "@type" : "@id"
+    },
+    "DireccionPostal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
@@ -57,8 +67,15 @@
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
+    "encodingFormat" : {
+      "@id" : "http://schema.org/encodingFormat",
+      "@type" : "@id"
+    },
     "Thing" : {
       "@id" : "http://schema.org/Thing"
+    },
+    "locatorDesignator" : {
+      "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
     },
     "District" : {
       "@id" : "http://dbpedia.org/ontology/District"
@@ -70,9 +87,28 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
+    "nombre" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "locatorName" : {
+      "@id" : "http://www.w3.org/ns/locn#locatorName"
+    },
+    "planta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
     "label" : {
       "@id" : "rdfs:label",
       "@type" : "@id"
+    },
+    "extensionDePortal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal"
+    },
+    "officialName" : {
+      "@id" : "http://www.geonames.org/ontology#officialName"
     },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -94,11 +130,20 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol",
       "@type" : "@id"
     },
+    "Via" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+    },
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
     "note" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "entrada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada"
+    },
+    "Persona" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona"
     },
     "GovernmentalAdministrativeRegion" : {
       "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
@@ -120,16 +165,26 @@
       "@id" : "http://www.w3.org/ns/org#hasMembership",
       "@type" : "@id"
     },
+    "numeroDePortal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal"
+    },
     "location" : {
       "@id" : "http://schema.org/location",
       "@type" : "@id"
+    },
+    "CreativeWork" : {
+      "@id" : "http://schema.org/CreativeWork"
     },
     "address" : {
       "@id" : "http://schema.org/address",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "rights" : {
-      "@id" : "http://purl.org/dc/elements/1.1/rights"
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "apellido1" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "integra" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra",
@@ -142,8 +197,14 @@
     "Distrito" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
     },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
+    },
     "identifier" : {
       "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "hectometro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro"
     },
     "preferredNamespacePrefix" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#preferredNamespacePrefix"
@@ -151,8 +212,14 @@
     "Place" : {
       "@id" : "http://schema.org/Place"
     },
+    "puerta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta"
+    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "numeroDePolicia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia"
     },
     "canal" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal",
@@ -168,12 +235,18 @@
     "RolIntegranteEvento" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento"
     },
+    "puntoKilometrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico"
+    },
     "tipoSesion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoSesion",
       "@type" : "@id"
     },
     "ConceptScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "finAsistencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#finAsistencia"
     },
     "tableOfContents" : {
       "@id" : "http://purl.org/dc/terms/tableOfContents"
@@ -185,14 +258,32 @@
       "@id" : "http://schema.org/subEvent",
       "@type" : "@id"
     },
-    "Documentacion" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion"
+    "fullAddress" : {
+      "@id" : "http://www.w3.org/ns/locn#fullAddress"
+    },
+    "DigitalDocument" : {
+      "@id" : "http://schema.org/DigitalDocument"
+    },
+    "inicioAsistencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#inicioAsistencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Portal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"
     },
     "Municipality" : {
       "@id" : "http://dbpedia.org/ontology/Municipality"
     },
+    "particula" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "tipoVia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia",
+      "@type" : "@id"
     },
     "accessRights" : {
       "@id" : "http://purl.org/dc/terms/accessRights"
@@ -210,6 +301,9 @@
     "Text" : {
       "@id" : "http://schema.org/Text"
     },
+    "nombreDelEdificio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio"
+    },
     "tipoAcceso" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#tipoAcceso",
       "@type" : "@id"
@@ -225,8 +319,8 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion",
       "@type" : "@id"
     },
-    "Group" : {
-      "@id" : "http://xmlns.com/foaf/0.1/Group"
+    "escalera" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera"
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"

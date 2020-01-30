@@ -4,6 +4,11 @@ This section provides details for each class and property defined by Vocabulary 
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">
+            <span>address</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
       </li>
       <li>
@@ -14,15 +19,18 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
       </li>
       <li>
+         <a href="#http://schema.org/DigitalDocument" title="http://schema.org/DigitalDocument">DigitalDocument</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
+      </li>
+      <li>
          <a href="#http://dbpedia.org/ontology/District" title="http://dbpedia.org/ontology/District">district</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
-      </li>
-      <li>
-         <a href="#Documentacion"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion">Documentation</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
@@ -36,11 +44,13 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Evento">Event in agenda</a>
       </li>
       <li>
-         <a href="#http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
-            title="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">governmental administrative region</a>
+         <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">
+            <span>feature</span>
+         </a>
       </li>
       <li>
-         <a href="#http://xmlns.com/foaf/0.1/Group" title="http://xmlns.com/foaf/0.1/Group">Group</a>
+         <a href="#http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+            title="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">governmental administrative region</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/org#Membership" title="http://www.w3.org/ns/org#Membership">membership</a>
@@ -56,10 +66,21 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
       </li>
       <li>
+         <a href="#Persona"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona">Person</a>
+      </li>
+      <li>
          <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a>
       </li>
       <li>
          <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal">Portal</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/org#Role" title="http://www.w3.org/ns/org#Role">role</a>
@@ -74,7 +95,36 @@ This section provides details for each class and property defined by Vocabulary 
       <li>
          <a href="#http://schema.org/Thing" title="http://schema.org/Thing">Thing</a>
       </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">Vía</a>
+      </li>
    </ul>
+   <div class="entity" id="http://www.w3.org/ns/locn#Address">
+      <h3>address<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/locn#Address</p>
+      <div class="comment">
+         <span class="markdown">An "address representation" as defined in the INSPIRE Data Specification on Addresses, v3.0.1. The locn:addressId property may be used to link this locn:Address to other representations.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/locn">http://www.w3.org/ns/locn</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://xmlns.com/foaf/0.1/Agent">
       <h3>Agent<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -88,8 +138,7 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://xmlns.com/foaf/0.1/Group" title="http://xmlns.com/foaf/0.1/Group">Group</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
+            <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -128,6 +177,12 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#http://www.w3.org/ns/org#Role" title="http://www.w3.org/ns/org#Role">role</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia">tipo de vía</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -180,6 +235,56 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://schema.org/DigitalDocument">
+      <h3>DigitalDocument<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/DigitalDocument</p>
+      <div class="comment">
+         <span class="markdown">An electronic file or document.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/CreativeWork">creative work</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#documentacion"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion">associated with</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">
+      <h3>Dirección postal<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal</p>
+      <div class="comment">
+         <span class="markdown">Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address
+Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://dbpedia.org/ontology/District">
       <h3>district<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -223,43 +328,6 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#http://dbpedia.org/ontology/District" title="http://dbpedia.org/ontology/District">district</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Documentacion">
-      <h3>Documentation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion</p>
-      <div class="comment">
-         <span class="markdown">Reference to the documentation associated with the event.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal">http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#nombreDoc"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc">documentation name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#formato"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#formato">format</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#publico"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico">public</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#uriDoc"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc">uri documentation</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#documentacion"
-               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#documentacion">associated with</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -377,6 +445,29 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://www.geonames.org/ontology#Feature">
+      <h3>feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.geonames.org/ontology#Feature</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal">Portal</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">Vía</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">
       <h3>governmental administrative region<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -401,36 +492,6 @@ This section provides details for each class and property defined by Vocabulary 
             <sup class="type-op" title="object property">op</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias">Ámbito de Competencias</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://xmlns.com/foaf/0.1/Group">
-      <h3>Group<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Group</p>
-      <div class="comment">
-         <span class="markdown">A class of Agents.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -564,9 +625,40 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          <dd>
             <a href="#http://www.w3.org/ns/org#Membership" title="http://www.w3.org/ns/org#Membership">membership</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/org#Role" title="http://www.w3.org/ns/org#Role">role</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Group" title="http://xmlns.com/foaf/0.1/Group">Group</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Persona">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona</p>
+      <div class="comment">
+         <span class="markdown">Person that participates in an event.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#apellido1"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido1">first surname</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nombre"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombre">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#apellido2"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido2">second surname</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -592,10 +684,15 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
             <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Persona"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Group" title="http://xmlns.com/foaf/0.1/Group">Group</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -621,6 +718,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          <dd>
             <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento">equipment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -632,6 +730,61 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          <dd>
             <a href="#http://schema.org/location" title="http://schema.org/location">location</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal">
+      <h3>Portal<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal</p>
+      <div class="comment">
+         <span class="markdown">Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">Vía</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/PostalAddress">
+      <h3>PostalAddress<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/PostalAddress</p>
+      <div class="comment">
+         <span class="markdown">The mailing address.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://schema.org/PostalAddress">https://schema.org/PostalAddress</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -697,7 +850,9 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#integra">integrates</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#rol"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#rol">role in event</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inicioAsistencia"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#inicioAsistencia">start attendance</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -749,6 +904,47 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">
+      <h3>Vía<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via</p>
+      <div class="comment">
+         <span class="markdown">Vía de comunicación construida para la circulación. 
+En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
+
+Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula">partícula</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia">tipo de vía</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal">Portal</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
@@ -763,6 +959,9 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
       <li>
          <a href="#canal"
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#canal">channel</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/encodingFormat" title="http://schema.org/encodingFormat">encodingFormat</a>
       </li>
       <li>
          <a href="#tipoEvento"
@@ -822,6 +1021,15 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#ambitoEvento">territorial scope</a>
       </li>
       <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia">tipo de vía</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/url" title="http://schema.org/url">
+            <span>url</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias">Ámbito de Competencias</a>
       </li>
@@ -850,8 +1058,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Documentacion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion">Documentation</a>
+               <a href="#http://schema.org/DigitalDocument" title="http://schema.org/DigitalDocument">DigitalDocument</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -928,6 +1135,27 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
                   title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/agenda-municipal/canal">canal</a>)</dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="http://schema.org/encodingFormat">
+      <h3>encodingFormat<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/encodingFormat</p>
+      <div class="comment">
+         <span class="markdown">Media type typically expressed using a MIME format (see &lt;a href="http://www.iana.org/assignments/media-types/media-types.xhtml"&gt;IANA site&lt;/a&gt; and &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types"&gt;MDN reference&lt;/a&gt;) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).&lt;br/&gt;&lt;br/&gt;
+
+In cases where a &lt;a class="localLink" href="http://schema.org/CreativeWork"&gt;CreativeWork&lt;/a&gt; has several media type representations, &lt;a class="localLink" href="http://schema.org/encoding"&gt;encoding&lt;/a&gt; can be used to indicate each &lt;a class="localLink" href="http://schema.org/MediaObject"&gt;MediaObject&lt;/a&gt; alongside particular &lt;a class="localLink" href="http://schema.org/encodingFormat"&gt;encodingFormat&lt;/a&gt; information.&lt;br/&gt;&lt;br/&gt;
+
+Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://schema.org/encodingFormat">https://schema.org/encodingFormat</a>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="tipoEvento">
       <h3>event type<sup class="type-op" title="object property">op</sup>
@@ -1475,6 +1703,66 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia">
+      <h3>tipo de vía<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia</p>
+      <div class="comment">
+         <span class="markdown">Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
+Por ejemplo, estas serán las URIs correspondientes a calles y plazas
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CALLE
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">Vía</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/url">
+      <h3>url<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/url</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#http://schema.org/Thing" title="http://schema.org/Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://schema.org/url">data property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#ambitoCompetencias">
       <h3>Ámbito de Competencias<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1521,22 +1809,94 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombreDoc">documentation name</a>
       </li>
       <li>
+         <a href="#finAsistencia"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#finAsistencia">end attendance</a>
+      </li>
+      <li>
          <a href="#http://schema.org/endDate" title="http://schema.org/endDate">endDate</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada">entrada</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera">escalera</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal">extensión de portal</a>
+      </li>
+      <li>
+         <a href="#apellido1"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido1">first surname</a>
       </li>
       <li>
          <a href="#formato"
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#formato">format</a>
       </li>
       <li>
+         <a href="#http://www.w3.org/ns/locn#fullAddress" title="http://www.w3.org/ns/locn#fullAddress">
+            <span>full address</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro">hectómetro</a>
+      </li>
+      <li>
          <a href="#reunionLobby"
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#reunionLobby">Lobby meeting</a>
+      </li>
+      <li>
+         <a href="#nombre"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombre">name</a>
       </li>
       <li>
          <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">name</a>
       </li>
       <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio">nombre del edificio</a>
+      </li>
+      <li>
+         <a href="#http://www.geonames.org/ontology#officialName" title="http://www.geonames.org/ontology#officialName">nombre oficial</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia">número de policía</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal">número de portal</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula">partícula</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta">planta</a>
+      </li>
+      <li>
          <a href="#publico"
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#publico">public</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta">puerta</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico">punto kilométrico</a>
+      </li>
+      <li>
+         <a href="#apellido2"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido2">second surname</a>
+      </li>
+      <li>
+         <a href="#inicioAsistencia"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#inicioAsistencia">start attendance</a>
       </li>
       <li>
          <a href="#http://schema.org/startDate" title="http://schema.org/startDate">startDate</a>
@@ -1546,7 +1906,9 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#uriDoc">uri documentation</a>
       </li>
       <li>
-         <a href="#http://schema.org/url" title="http://schema.org/url">url</a>
+         <a href="#http://schema.org/url" title="http://schema.org/url">
+            <span>url</span>
+         </a>
       </li>
    </ul>
    <div class="entity" id="http://schema.org/address">
@@ -1627,18 +1989,27 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
       </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Documentacion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion">Documentation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="finAsistencia">
+      <h3>end attendance<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#finAsistencia</p>
+      <div class="comment">
+         <span class="markdown">End attendance date and time of a participant of an event.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
    </div>
    <div class="entity" id="http://schema.org/endDate">
       <h3>endDate<sup class="type-dp" title="data property">dp</sup>
@@ -1670,6 +2041,113 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada">
+      <h3>entrada<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera">
+      <h3>escalera<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal">
+      <h3>extensión de portal<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#extensionDePortal</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="apellido1">
+      <h3>first surname<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido1</p>
+      <div class="comment">
+         <span class="markdown">First surname of a person.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Persona"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="formato">
       <h3>format<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1688,14 +2166,51 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
       </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Documentacion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion">Documentation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>{ "imagen" , "texto" , "video" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/locn#fullAddress">
+      <h3>full address<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/locn#fullAddress</p>
+      <div class="comment">
+         <span class="markdown">The complete address written as a string, with or without formatting</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/locn">http://www.w3.org/ns/locn</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro">
+      <h3>hectómetro<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro</p>
+      <div class="comment">
+         <span class="markdown">Esta propiedad permite definir el hectómetro en el que se encuentra una dirección postal en caso de que sea relevante representarlo, siendo complementaria a la propiedad que permite representar el punto kilométrico. Es importante destacar que esta propiedad no aparece en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86, como el resto de propiedades definidas en este vocabulario como subpropiedades de locn:locatorDesignator y locn:locatorName</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1724,6 +2239,35 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nombre">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#nombre</p>
+      <div class="comment">
+         <span class="markdown">First and second given name of a person.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Persona"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -1758,6 +2302,156 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio">
+      <h3>nombre del edificio<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio</p>
+      <div class="comment">
+         <span class="markdown">Un locator name específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorName">locator name</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.geonames.org/ontology#officialName">
+      <h3>nombre oficial<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.geonames.org/ontology#officialName</p>
+      <div class="comment">
+         <span class="markdown">Un nombre en el idioma oficial local</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.geonames.org/ontology">http://www.geonames.org/ontology</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia">
+      <h3>número de policía<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePolicia</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal">
+      <h3>número de portal<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#numeroDePortal</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula">
+      <h3>partícula<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#particula</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero</a>
+         </dd>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">Vía</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta">
+      <h3>planta<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="publico">
       <h3>public<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1778,15 +2472,119 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta">
+      <h3>puerta<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico">
+      <h3>punto kilométrico<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="apellido2">
+      <h3>second surname<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#apellido2</p>
+      <div class="comment">
+         <span class="markdown">Second surname of a person.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
+      <div class="description">
+         <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Documentacion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion">Documentation</a>
+               <a href="#Persona"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Persona">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inicioAsistencia">
+      <h3>start attendance<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#inicioAsistencia</p>
+      <div class="comment">
+         <span class="markdown">Start attendance date and time of a participant of an event.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RolIntegranteEvento"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#RolIntegranteEvento">Role member of event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
             </dd>
          </dl>
       </div>
@@ -1841,12 +2639,6 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Documentacion"
-                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/agenda-municipal#Documentacion">Documentation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
@@ -1855,31 +2647,21 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
       </div>
    </div>
    <div class="entity" id="http://schema.org/url">
-      <h3>url<sup class="type-dp" title="data property">dp</sup>
+      <h3>url<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://schema.org/url</p>
-      <div class="comment">
-         <span class="markdown">url of the item.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://schema.org/url">https://schema.org/url</a>
-         </dd>
-      </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#http://schema.org/url">object property</a>
             </dd>
          </dl>
       </div>
