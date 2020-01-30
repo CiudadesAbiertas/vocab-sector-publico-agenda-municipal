@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "9c091803853cdfd100a07f63bc2a99dc" "escjr:Portal" "esdir:DireccionPostal" "http://www.w3.org/ns/org#Role" "http://www.geonames.org/ontology#Feature" "esagm:RolIntegranteEvento" "e88e62b3dec0e738ad089c7df3932e48" "escjr:Via" "esagm:Evento" "esadm:Municipio" "foaf:Person" "http://schema.org/PostalAddress" "http://schema.org/CreativeWork" "0dd4b228a5636e4c5c1fe4ad37e96fa2" "f5d21553a73014654ffa79561c7c26f2" "locn:Address" "http://www.w3.org/ns/org#Organization" "esagm:Persona" "foaf:Agent" "dbo:GovernmentalAdministrativeRegion" "3fd4fa544e1edf60a3c7d9c34c365a04" "5dbf7256b238ed972c879ec268894bb7" "skos:Concept" "http://schema.org/Place" "348ea205210083134d22005025922a00" "http://schema.org/DigitalDocument" "dbo:District" "http://schema.org/Event" "esequip:Equipamiento" "dbo:Municipality" "esadm:Distrito" ; /*classes style*/
+node [shape = rectangle, color="black"]; "escjr:Portal" "esdir:DireccionPostal" "5c090b2223460fe67fb3e850e2a4f14d" "9c774c9df7301423ffdb2a7019f89d80" "http://www.w3.org/ns/org#Role" "http://www.geonames.org/ontology#Feature" "esagm:RolIntegranteEvento" "escjr:Via" "esagm:Evento" "esadm:Municipio" "ad6bb5f6079e43905c1d5d12dcd17a27" "foaf:Person" "http://schema.org/PostalAddress" "http://schema.org/CreativeWork" "locn:Address" "http://www.w3.org/ns/org#Organization" "aa74a99a1430e1908ec426bae7657c08" "esagm:Persona" "foaf:Agent" "dbo:GovernmentalAdministrativeRegion" "skos:Concept" "http://schema.org/Place" "8a5e4b3a0888dd1e8b90d728cc6e2caf" "http://schema.org/DigitalDocument" "8487ebd490d89c2dc8bf8fc54b9b21fc" "dbo:District" "http://schema.org/Event" "esequip:Equipamiento" "6aa6839302453ae46774a472641fca92" "dbo:Municipality" "esadm:Distrito" ; /*classes style*/
 	"http://www.geonames.org/ontology#Feature" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/ns/org#Role" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
@@ -11,17 +11,17 @@ node [shape = rectangle, color="black"]; "9c091803853cdfd100a07f63bc2a99dc" "esc
 	"dbo:Municipality" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
 	"escjr:Portal" -> "http://www.geonames.org/ontology#Feature" [ label = "rdfs:subClassOf" ];
 	"dbo:District" -> "dbo:GovernmentalAdministrativeRegion" [ label = "rdfs:subClassOf" ];
-	"esagm:Evento" -> "348ea205210083134d22005025922a00" [ label = "rdfs:subClassOf" ];
 	"esagm:Evento" -> "http://schema.org/Event" [ label = "rdfs:subClassOf" ];
-	"esagm:Evento" -> "9c091803853cdfd100a07f63bc2a99dc" [ label = "rdfs:subClassOf" ];
-	"esagm:Evento" -> "e88e62b3dec0e738ad089c7df3932e48" [ label = "rdfs:subClassOf" ];
-	"esagm:Evento" -> "5dbf7256b238ed972c879ec268894bb7" [ label = "rdfs:subClassOf" ];
+	"esagm:Evento" -> "5c090b2223460fe67fb3e850e2a4f14d" [ label = "rdfs:subClassOf" ];
+	"esagm:Evento" -> "8487ebd490d89c2dc8bf8fc54b9b21fc" [ label = "rdfs:subClassOf" ];
+	"esagm:Evento" -> "6aa6839302453ae46774a472641fca92" [ label = "rdfs:subClassOf" ];
+	"esagm:Evento" -> "9c774c9df7301423ffdb2a7019f89d80" [ label = "rdfs:subClassOf" ];
 	"esequip:Equipamiento" -> "http://schema.org/Place" [ label = "rdfs:subClassOf" ];
 	"escjr:Via" -> "http://www.geonames.org/ontology#Feature" [ label = "rdfs:subClassOf" ];
 	"http://schema.org/DigitalDocument" -> "http://schema.org/CreativeWork" [ label = "rdfs:subClassOf" ];
-	"esagm:RolIntegranteEvento" -> "f5d21553a73014654ffa79561c7c26f2" [ label = "rdfs:subClassOf" ];
-	"esagm:RolIntegranteEvento" -> "0dd4b228a5636e4c5c1fe4ad37e96fa2" [ label = "rdfs:subClassOf" ];
-	"esagm:RolIntegranteEvento" -> "3fd4fa544e1edf60a3c7d9c34c365a04" [ label = "rdfs:subClassOf" ];
+	"esagm:RolIntegranteEvento" -> "aa74a99a1430e1908ec426bae7657c08" [ label = "rdfs:subClassOf" ];
+	"esagm:RolIntegranteEvento" -> "ad6bb5f6079e43905c1d5d12dcd17a27" [ label = "rdfs:subClassOf" ];
+	"esagm:RolIntegranteEvento" -> "8a5e4b3a0888dd1e8b90d728cc6e2caf" [ label = "rdfs:subClassOf" ];
 	"esdir:DireccionPostal" -> "locn:Address" [ label = "rdfs:subClassOf" ];
 	"esdir:DireccionPostal" -> "http://schema.org/PostalAddress" [ label = "rdfs:subClassOf" ];
 	"esadm:Municipio" -> "dbo:Municipality" [ label = "rdfs:subClassOf" ];
